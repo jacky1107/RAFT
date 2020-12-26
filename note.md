@@ -1,6 +1,6 @@
-Related Work
+## Related Work
 
-Optical Flow as Energy Minimization
+### Optical Flow as Energy Minimization
 
     Optical Flow 被視為是energy minimization的問題，使data term以及regularization term之間達到平衡
 
@@ -27,18 +27,20 @@ Optical Flow as Energy Minimization
 
     而此篇論文，嘗試利用 NN 來估計 flow，並且保持整個 end-to-end 過程是可微分的
 
-Direct Flow Prediction
+### Direct Flow Prediction
 
     此篇論文的目的是訓練出一個神經網路能夠直接預測 optical flow between a pair of frames，並且避開最佳化問題
 
     Coarse-to-fine 技術被很多人使用，但不同的點是他們維持且提升單張高解析度的光流法流暢度
 
-Iterative Refinement for Optical Flow
+### Iterative Refinement for Optical Flow
 
     The main difference of these approaches from ours is that they do not share weights between iterations.
 
     該篇論文的 update operator uses a modified GRU block which job is converge a fixed flow field easily.
 
-Learning to Optimize
+### Learning to Optimize
 
     該篇論文其中一個特點在於，他們並沒有明確地定義優化目標，反而是使用了大量的更新模塊來模擬一階優化演算法，並在先前所建立好的correlation volumes提取特徵並試著找到更新方向
+
+## Approach
