@@ -3,6 +3,7 @@
 #include "opencv2/highgui.hpp"
 #include <iostream>
 using namespace cv;
+
 int main()
 {
     Mat img = imread("1.png", IMREAD_COLOR);
