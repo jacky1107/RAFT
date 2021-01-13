@@ -62,3 +62,4 @@
         GRU的輸出hidden state，再經由兩層的conv2d去預測將要更新的delta f，而此時的output flow只有1/8的resolution，但最終還是要upsample to match ground truth to training and evalution.
 
     2.5 Upsampling:
+        In here, they perform the bilinear upsampling and produce better results, particularly near motion boundaries.
